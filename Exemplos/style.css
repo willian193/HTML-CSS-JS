@@ -39,3 +39,122 @@ nav a{
 nav a:hover{
  text-decoration: underline;
 }
+
+h2 {
+    color: rgb(0, 1, 3);
+    margin-top:  20px;
+}
+
+h3{
+    color:rgb(69, 122, 0);
+    margin-top:  15px;
+}
+
+p{
+    margin-bottom: 12px; /*espaço abaixo de cada paragrafo*/
+}
+
+strong{
+    color: rgb(166, 255, 0); /*azul escuro*/
+}
+
+em{
+    color: green;
+}
+
+mark{
+    color: aqua;
+}
+
+a{
+    color: yellowgreen;
+}
+
+a:hover{
+    color: forestgreen;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+img{
+    max-width: 120px;
+    border-radius: 50%;
+    border: 3px solid sienna;
+    margin:  15px 0;
+}
+
+ul, ol{
+    margin-left: 20px;
+}
+
+form{
+    background-color: aliceblue;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+label{
+    font-weight: bold; /*texto em negrito*/
+}
+
+input, textarea,select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(2, 4, 94);
+    border-radius: 10px;
+}
+
+
+    button{
+        background-color: blueviolet;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button:hover{
+        background-color: teal;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px
+    }
+
+    th{
+        background-color: black;
+        color: violet;
+        padding: 10px;
+    }
+
+    td{
+        padding: 10px;
+        border: 1px solid purple;
+    }
+
+    video,audio,iframe{
+        margin: 15px;
+    }
+
+    pre{
+        background-color: bisque;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    code{
+        color: white
+    }
+
+    footer{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
+    }
