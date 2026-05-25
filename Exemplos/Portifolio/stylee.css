@@ -1,0 +1,290 @@
+*{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #11599c;
+  color: whitesmoke;
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 8%;
+
+  background-color: black;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+}
+
+.logotipo{
+  font-size: 45px;
+  font-weight: 600;
+
+  color: white;
+
+  letter-spacing: 3px;
+}
+
+.logotipo span{
+  color: #0077ff;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li{
+  margin-left: 40px;
+}
+
+nav ul li a{
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: 600;
+
+  transition: 0.4s;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+nav ul li a:hover{
+  color: #0077ff;
+}
+
+/* TOPO */
+
+.Secao-Principal{
+  text-align: center;
+
+  padding: 80px 8% 40px;
+}
+
+.texto-apresentacao .saudacao{
+  color: #0077ff;
+
+  font-size: 40px;
+
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.texto-apresentacao h1{
+  font-size: 60px;
+
+  margin-bottom: 20px;
+}
+
+.texto-apresentacao h1 span{
+  color: #0077ff;
+}
+
+.texto-apresentacao p{
+  color: white;
+
+  font-size: 22px;
+}
+
+/* CONTATO */
+
+.contato{
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  gap: 50px;
+
+  flex-wrap: wrap;
+
+  padding: 60px 8%;
+}
+
+/* INFORMAÇÕES */
+
+.informacoes-contato{
+  width: 350px;
+
+  background-color: #032744;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.informacoes-contato h2{
+  color: #0077ff;
+
+  font-size: 35px;
+
+  margin-bottom: 25px;
+}
+
+.informacoes-contato p{
+  margin-bottom: 18px;
+
+  font-size: 18px;
+}
+
+.redes-sociais{
+  margin-top: 25px;
+}
+
+.redes-sociais a{
+  text-decoration: none;
+
+  color: #0077ff;
+
+  font-weight: bold;
+
+  margin-right: 15px;
+
+  transition: 0.3s;
+}
+
+.redes-sociais a:hover{
+  color: #93c0f3;
+}
+
+/* FORMULÁRIO */
+
+.formulario-contato{
+  width: 450px;
+
+  background-color: #032744;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.formulario-contato h2{
+  color: #0077ff;
+
+  font-size: 35px;
+
+  margin-bottom: 25px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+input,
+textarea{
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  font-size: 16px;
+}
+
+textarea{
+  height: 150px;
+
+  resize: none;
+}
+
+button{
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background-color: #0077ff;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: #021b30;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #032744;
+
+  padding: 40px 8%;
+
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+.conteudo-rodape{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.navegacao-rodape{
+  margin: 15px 0;
+}
+
+.navegacao-rodape a{
+  color: #0077ff;
+
+  text-decoration: none;
+
+  margin: 0 15px;
+
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.navegacao-rodape a:hover{
+  color: #93c0f3;
+}
+
+.direitos-autorais{
+  color: #ffffff65;
+
+  font-size: 14px;
+}
