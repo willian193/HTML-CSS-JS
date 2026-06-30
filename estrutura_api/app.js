@@ -61,6 +61,14 @@ server.put('/cursos/:id', (req, res) => {
     return res.json(cursos[id]);
 });
 
+server.delete('/cursos/:id', (req, res) => {
+    const index = req.params.index;
+
+    cursos.splice(index, 1);
+
+    return res.json(cursos);   
+    });
+
 server.listen(3040, () => {
     console.log('Servidor rodando na porta 3040');
 });
