@@ -37,20 +37,35 @@ function idCursoExiste(req, res, next){
 //LISTAR TODOS OS CURSOS
 //localhost:3000/cursos
 server.get('/cursos', (req, res) => {
-    // Retorna a lista completa de cursos em formato JSON
-    return res.json(cursos);
+    const sql = 'SELECT * FROM cursos';
+
+    connection.query(sql, (err, results) => {
+        if (err) {
+            console.error('Erro ao executar a consulta:', err);
+            return res.status(500).json({ error: 'Erro ao buscar cursos no banco de dados' });
+        }
+        return res.json(results);
+    });
 });
 
 //Método HTTP: GET
 //LISTAR UM UNICO CURSO
 //localhost:3000/curso/2
 server.get('/cursos/:id', idCursoExiste, (req, res) => {
+    const { id } = req.params;
 
-    // Desestrutura o parâmetro "index" vindo da URL
-    const id = req.params.id;        
-
-    // Retorna o curso correspondente ao índice informado
-    return res.json(cursos[id]);
+    const sql = 'SELECT * FROM cursos WHERE id = ?';
+       
+    connection.query(sql, [id], (err, results) => {
+        if (err) {
+            console.error('Erro ao executar a consulta:', err);
+            return res.status(500).json({ error: 'Erro ao buscar curso no banco de dados' });
+        }
+        if (results.length === 0) {
+            return res.status(404).json({ error: 'Curso não encontrado' });
+        }
+        return res.json(results[0]);
+    });
 });
 
 //Método HTTP: POST
